@@ -9,5 +9,6 @@
 - 算法读入数据的方式
   - 读入的col：cantrackcol
   - 源码：
-    - auto CanTracks = getROColl(CanTrackCollection, "CanTrackCol");  这里表示只读 
-      auto CanTracks = getRWColl(CanTrackCollection, "CanTrackCol");   这里表示读写
+    - //auto CanTracks = getROColl(CanTrackCollection, "CanTrackCol");  这里表示只读 
+    - auto CanTracks = getRWColl(CanTrackCollection, "CanTrackCol");   这里表示读写
+    - 这两行都是代表从缓存里面读取CantrackCol，如果缓存没有会自动创建一个CanTrackCol
