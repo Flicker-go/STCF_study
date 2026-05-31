@@ -5,3 +5,9 @@
     - 材料（material）：探测器各个部件的材料，反映物质效应。
     - 层次结构：volume之间的包含/不包含关系。
     - 放置：各个volume之间的摆放、几何关系等。
+
+- 算法读入数据的方式
+  - 读入的col：cantrackcol
+  - 源码：
+    - auto CanTracks = getROColl(CanTrackCollection, "CanTrackCol");   
+      auto CanTracks = getRWColl(CanTrackCollection, "CanTrackCol"); 
